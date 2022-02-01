@@ -1,0 +1,36 @@
+<main id="main" class="main">  
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+              <h5>User List <span class="badge bg-primary badge-number">{{userCount}}</span> </h5>
+              <a [routerLink]="['/create-user']">Create New</a>
+              <table class="table">
+                <thead>
+                  <tr>
+                  
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of userList;">  
+                    <td>{{user.Name}}</td>  
+                    <td>{{user.MobileNo}}</td>  
+                    <td>{{user.Email}}</td>
+                    <td>
+                      <button><i class="bx bxs-edit"></i></button>
+                      <button></button>
+                      <button></button>
+                    </td>    
+                </tr>  
+                </tbody>
+              </table>
+            </div>
+        
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->

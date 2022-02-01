@@ -1,0 +1,30 @@
+
+    <aside id="sidebar" class="sidebar sidebar-offcanvas">
+    
+      <ul class="sidebar-nav" id="sidebar-nav">
+    
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/dashboard']">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li><!-- End Dashboard Nav -->
+    
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#settings-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-tools"></i><span>Settings</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="settings-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a [routerLink]="['/user']">
+                <i class="bi bi-circle"></i><span>Users</span>
+              </a>
+            </li>
+           
+          </ul>
+        </li><!-- End Components Nav -->
+    
+    
+      </ul>
+    
+    </aside><!-- End Sidebar-->
